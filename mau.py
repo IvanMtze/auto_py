@@ -39,7 +39,7 @@ for personIndex in range(2, 22):
     comentario = input("Ingrese el comentario de la persona: ")
     print("Haciendo envio")
     
-    final_url = "entry.142362158_sentinel=&enstry.142362158="+str(lugar)+"&entry.2070048545=" + str(informacion[matricula])+"&entry.301730181_year="+str(informacion[5][0])+"&entry.301730181_month="+str(informacion[5][2])+"&entry.301730181_day="+str(informacion[5][1])+"&entry.2108397311_hour=08&entry.2108397311_minute=30&entry.246699160="+str(informacion[estatus])+"&entry.1073304337="+str(informacion[nivel])+"&entry.1118742320="+"OK"+"&entry.969578486="+comentario+"&fvv=1&draftResponse=%5Bnull%2Cnull%2C%22-768346404936795950%22%5D%0D%0A&pageHistory=0&fbzx=-768346404936795950"
-
-    print(final_url)
+    final_url = "entry.142362158_sentinel=&entry.142362158="+str(lugar)+"&entry.2070048545=" + str(informacion[matricula])+"&entry.301730181_year="+str(informacion[5][0])+"&entry.301730181_month="+str(informacion[5][2])+"&entry.301730181_day="+str(informacion[5][1])+"&entry.2108397311_hour=08&entry.2108397311_minute=30&entry.246699160="+str(informacion[estatus])+"&entry.1073304337="+str(informacion[nivel])+"&entry.1118742320="+"OK"+"&entry.969578486="+comentario+"&fvv=1&draftResponse=%5Bnull%2Cnull%2C%22-768346404936795950%22%5D%0D%0A&pageHistory=0&fbzx=-768346404936795950"
+    original_url = "https://docs.google.com/forms/d/e/1FAIpQLSdPujwS_4h0BBPyrnMsL0uOzOWLT8TXnqK7fAQn5t0SUkQWmQ/formResponse?"
+    print(original_url + final_url)
 
